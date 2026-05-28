@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <title>portfolio-cakes</title>
+
+      <link
+         rel="icon"
+         type="image/png"
+         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='77' font-size='70' text-anchor='middle' fill='%23FF69B4'%3E🎂%3C/text%3E%3C/svg%3E"
+      />
+   </head>
+   <body>
+      <div class="container">
+         <div class="header">
+            <div class="header-icon-wrapper">
+               <div class="icon-center">
+                  <div class="border-rotate"></div>
+                  <div class="header-icon">🎂</div>
+               </div>
+               <div class="orbiting-circle orb-circle-1"></div>
+               <div class="orbiting-circle orb-circle-2"></div>
+               <div class="orbiting-circle orb-circle-3"></div>
+               <div class="orbiting-circle orb-circle-4"></div>
+               <div class="orbiting-circle orb-circle-5"></div>
+               <div class="orbiting-circle orb-circle-6"></div>
+               <div class="orbiting-circle orb-circle-7"></div>
+               <div class="orbiting-circle orb-circle-8"></div>
+               <div class="orbiting-circle orb-circle-9"></div>
+               <div class="orbiting-circle orb-circle-10"></div>
+               <div class="orbit-ring">
+                  <div class="orbit-particle"></div>
+                  <div class="orbit-particle orbit-particle-2"></div>
+                  <div class="orbit-particle orbit-particle-3"></div>
+                  <div class="orbit-particle orbit-particle-4"></div>
+                  <div class="orbit-particle orbit-particle-5"></div>
+               </div>
+               <div class="orbit-ring orbit-ring-2">
+                  <div class="orbit-particle orbit-particle-6"></div>
+                  <div class="orbit-particle orbit-particle-7"></div>
+               </div>
+            </div>
+            <h1>Tatiana Vanilla</h1>
+            <div class="header-subtitle">КОНДИТЕРСКАЯ · ТОРТЫ · ДЕСЕРТЫ</div>
+            <p>Создаю вкусные торты и красивые десерты на любой праздник.</p>
+            <p><span class="header-highlight">Сделай свой заказ</span></p>
+         </div>
+         <!-- <div class="stats-grid">
+            <div class="stat-card">
+               <div class="stat-number">5000+</div>
+               <div class="stat-label">Заказов</div>
+            </div>
+            <div class="stat-card">
+               <div class="stat-number">98%</div>
+               <div class="stat-label">Довольных клиентов</div>
+            </div>
+         </div> -->
+         <div class="cards-grid">
+            <div class="card card-1">
+               <div class="card-icon">❤️</div>
+               <div class="card-content">
+                  <div class="card-title">Донат</div>
+                  <div class="card-description">Поддержать производителя</div>
+               </div>
+               <button class="card-button" onclick="handleClick('donate')">
+                  Донат
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-2">
+               <div class="card-icon">🛒</div>
+               <div class="card-content">
+                  <div class="card-title">Выбрать торт</div>
+                  <div class="card-description">
+                     Посмотри каталог моих тортов
+                  </div>
+               </div>
+               <button class="card-button" onclick="handleClick('catalog')">
+                  Каталог
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-3">
+               <div class="card-icon">🎁</div>
+               <div class="card-content">
+                  <div class="card-title">Рецепты</div>
+                  <div class="card-description">
+                     Узнай секреты моих десертов
+                  </div>
+               </div>
+               <button class="card-button" onclick="handleClick('recipes')">
+                  Рецепты
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-4">
+               <div class="card-icon">✈️</div>
+               <div class="card-content">
+                  <div class="card-title">Telegram</div>
+                  <div class="card-description">
+                     Быстрая консультация о вашем торте
+                  </div>
+               </div>
+               <button class="card-button" onclick="handleClick('telegram')">
+                  Telegram
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-5">
+               <div class="card-icon">📞</div>
+               <div class="card-content">
+                  <div class="card-title">Viber</div>
+                  <div class="card-description">Позвонить или написать мне</div>
+               </div>
+               <button class="card-button" onclick="handleClick('viber')">
+                  Viber
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-6">
+               <div class="card-icon">💬</div>
+               <div class="card-content">
+                  <div class="card-title">WhatsApp</div>
+                  <div class="card-description">Написать в WhatsApp</div>
+               </div>
+               <button class="card-button" onclick="handleClick('whatsapp')">
+                  WhatsApp
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-7">
+               <div class="card-icon">📸</div>
+               <div class="card-content">
+                  <div class="card-title">Instagram</div>
+                  <div class="card-description">
+                     Смотри мои торты в портфолио
+                  </div>
+               </div>
+               <button class="card-button" onclick="handleClick('instagram')">
+                  Instagram
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-8">
+               <div class="card-icon">▶️</div>
+               <div class="card-content">
+                  <div class="card-title">YouTube</div>
+                  <div class="card-description">Видео рецепты и обзоры</div>
+               </div>
+               <button class="card-button" onclick="handleClick('youtube')">
+                  YouTube
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-9">
+               <div class="card-icon">📘</div>
+               <div class="card-content">
+                  <div class="card-title">Facebook</div>
+                  <div class="card-description">Следите за новостями</div>
+               </div>
+               <button class="card-button" onclick="handleClick('facebook')">
+                  Facebook
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+            <div class="card card-10">
+               <div class="card-icon">🎵</div>
+               <div class="card-content">
+                  <div class="card-title">TikTok</div>
+                  <div class="card-description">Короткие видео с тортами</div>
+               </div>
+               <button class="card-button" onclick="handleClick('tiktok')">
+                  TikTok
+               </button>
+               <div class="bottom-shine"></div>
+            </div>
+         </div>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
